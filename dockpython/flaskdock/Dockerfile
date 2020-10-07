@@ -15,4 +15,4 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 
 ENTRYPOINT ["python3"]
-CMD ["app.py", "KNN_FXCM_ALGO.py"]
+CMD ["app.py"]
