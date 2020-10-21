@@ -3,7 +3,7 @@ FROM ubuntu:latest
 RUN apt-get update
 RUN apt-get install -y nodejs
 RUN apt-get install -y npm
-# RUN npm install -g yarn
+RUN npm install yarn
 
 # COPY . /app
 
@@ -19,7 +19,7 @@ RUN npm install
 COPY . .
 # WORKDIR /bin
 
-# EXPOSE 3000
+EXPOSE 3000
 
 # ENTRYPOINT ["node"]
 CMD ["npm", "start"]
